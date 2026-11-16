@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Acesse sua conta Monte-Aro.">
+    <link rel="stylesheet" href="login.css">
+    <title>Login | Monte-Aro</title>
+</head>
+
+<body>
+    <main class="container">
+        <div class="login-logo">
+            <a href="../Pneus/pagPneus.html">
+                <img src="../imagens/login-logo.png" alt="Monte-Aro">
+            </a>
+        </div>
+
+        <form class="login-form">
+            <div class="input-box">
+                <input type="email" name="usuario" placeholder="Usuário" autocomplete="username" aria-label="Usuário">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true">
+                    <circle cx="12" cy="8" r="4"></circle>
+                    <path d="M4 21c0-4 3.6-7 8-7s8 3 8 7"></path>
+                </svg>
+            </div>
+
+            <div class="input-box">
+                <input type="password" name="senha" placeholder="Senha" autocomplete="current-password" aria-label="Senha">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true">
+                    <rect x="4" y="10" width="16" height="11" rx="2"></rect>
+                    <path d="M8 10V7a4 4 0 0 1 8 0v3"></path>
+                </svg>
+            </div>
+
+            <div class="remember-forgot">
+                <label>
+                    <input type="checkbox">
+                    Lembrar senha
+                </label>
+                <a href="#">Esqueci a senha</a>
+            </div>
+
+            <button type="button" class="login">Login</button>
+
+            <div class="register-link">
+                <p>Não tem uma conta? <a href="#">Cadastre-se</a></p>
+            </div>
+        </form>
+
+        <p class="voltar-loja"><a href="../Pneus/pagPneus.html">← Voltar para a loja</a></p>
+    </main>
+</body>
+
+</html>
