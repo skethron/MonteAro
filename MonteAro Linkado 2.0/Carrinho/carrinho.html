@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MONTE-ARO</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="cabecalho.css" />
+    <style>
+        body {
+            background-color: #fef986;
+        }
+
+
+        body::before {
+            content: "";
+            position: fixed;
+            inset: 0;
+            z-index: -1;
+            pointer-events: none;
+            background: #fef986 url("fundoMonteAro4k.jpg.jpeg") center center / cover no-repeat;
+            transform: scale(1.05) translateY(2%);
+        }
+    </style>
+  </head>
+  <body>
+    <div class="cabecalho-site">
+        <div class="faixa-contato">
+            <div class="container faixa-contato-conteudo">
+                <span>Qualidade e confiança para seguir seu caminho</span>
+                <a href="mailto:montearocontato@gmail.com">Entre em contato</a>
+            </div>
+        </div>
+
+        <header class="cabecalho">
+            <div class="container cabecalho-principal">
+                <a class="marca" href="../Inicio/inicio.html" aria-label="Monte-Aro Pneus - página inicial">
+                    <img src="../imagens/logo-monte-aro.png" alt="Monte-Aro Pneus">
+                </a>
+
+                <form class="pesquisa" action="#" role="search">
+                    <input type="search" placeholder="Busque por pneus, marcas ou medidas..."
+                        aria-label="Buscar produtos">
+                    <button type="submit" aria-label="Buscar">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                            fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                            aria-hidden="true">
+                            <circle cx="11" cy="11" r="7"></circle>
+                            <path d="m16 16 4 4"></path>
+                        </svg>
+                    </button>
+                </form>
+
+                <nav class="acoes-header" aria-label="Ações do usuário">
+                    <a href="../Login/login.html" class="acao-header">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke-width="2"
+                            stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                            <circle cx="12" cy="8" r="4"></circle>
+                            <path d="M4 21c0-4 3.6-7 8-7s8 3 8 7"></path>
+                        </svg>
+                        <small>Login</small>
+                    </a>
+                    <a href="carrinho.html" class="acao-header" aria-current="page">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke-width="2"
+                            stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                            <circle cx="9" cy="20" r="1.6"></circle>
+                            <circle cx="18" cy="20" r="1.6"></circle>
+                            <path d="M2 3h3l2.6 12h11.2L21 7H6"></path>
+                        </svg>
+                        <small>Carrinho<span class="carrinho-contador" hidden>0</span></small>
+                    </a>
+                </nav>
+            </div>
+
+            <nav class="menu-categorias" aria-label="Categorias">
+                <div class="container menu-categorias-conteudo">
+                    <a href="../Pneus/pagPneus.html">Pneus</a>
+                    <a href="../Inicio/inicio.html#marcas">Marcas</a>
+                    <a href="../Aros/aros.html">Aros</a>
+                    <a href="../Acessórios/Acessórios.html">Acessórios</a>
+                    <a href="../Suporte/suporte.html">Suporte</a>
+                </div>
+            </nav>
+        </header>
+    </div>
+
+    <main class="container">
+
+
+        <section class="produtos">
+
+            <h2 class="titulo-ofertas">VEJA TAMBÉM</h2>
+
+            <div class="produto-card">
+
+                <img
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRi0gjvMotNYsQkdVQuOk98nIfEmXf0a893_OhAO3LwHA&s=10"
+                    alt="Pneu Michelin aro 14">
+
+                <h3>Pneu Aro 14 Michelin</h3>
+
+                <p>Preço: R$ 450,00</p>
+
+                <button onclick="adicionarAoCarrinho('Pneu Aro 14 Michelin', 450)">
+                    🛒 Adicionar ao Carrinho
+                </button>
+
+            </div>
+
+
+            <div class="produto-card">
+
+                <img
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRfceypweSonfjMP7laTE5QklU9x8myFxEicQPIGVLHxnAqcbwCs4p_i-np&s=10"
+                    alt="Pneu Pirelli aro 15">
+
+                <h3>Pneu Aro 15 Pirelli</h3>
+
+                <p>Preço: R$ 520,00</p>
+
+                <button onclick="adicionarAoCarrinho('Pneu Aro 15 Pirelli', 520)">
+                    🛒 Adicionar ao Carrinho
+                </button>
+
+            </div>
+            <div class="produto-card">
+
+                <img
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRwX--l8BYJXOvQmsF81Gz73k9DWYr_qhY_R1E6-gwn5A&s=10"
+                    alt="Pretinho">
+
+                <h3>Pretinho</h3>
+
+                <p>Preço: R$ 79,90</p>
+
+                <button onclick="adicionarAoCarrinho('Pretinho', 79.90)">
+                    🛒 Adicionar ao Carrinho
+                </button>
+
+            </div>
+        </section>
+
+
+        <aside class="carrinho">
+
+            <h2>🛒 Seu Carrinho</h2>
+
+            <ul id="lista-carrinho">
+            </ul>
+
+            <p>
+                Total: R$
+                <span id="total-carrinho-carrinho">0,00</span>
+            </p>
+
+            <button
+                id="limpar-carrinho"
+                onclick="limparCarrinho()">
+
+                🗑️ Limpar Carrinho
+
+            </button>
+            <div class="carrinho-info">
+            🛒 Carrinho:
+            <span id="contador-carrinho">0</span> itens
+            |
+            Total: R$
+            <span id="total-carrinho">0,00</span>
+        </div>
+
+        </aside>
+
+    </main>
+
+
+      <script src="script.js"></script>
+  </body>
+</html>
