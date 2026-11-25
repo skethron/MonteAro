@@ -1,0 +1,85 @@
+body {
+    background-color: #f4d000; 
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #111111;
+}
+h1, h2 {
+    background-color: #111111;
+    border-bottom: 4px solid #ff9900; 
+    color: #ffffff;
+    padding: 15px 10px;
+    margin: 0 0 20px 0;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+.fundo img {
+    position: absolute; 
+    top: 20px;
+    right: 30px;
+    width: 80px;
+    height: auto;
+    z-index: 10;
+}
+.marcas-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    max-width: 1100px;
+    margin: 40px auto;
+    padding: 0 20px;
+    align-items: center;
+    justify-items: center;
+}
+
+.Pirelli img, 
+.Michelin img, 
+.Goodyear img, 
+.Bridgestone img {
+    width: 100%;
+    max-width: 350px;
+    height: 180px;
+    object-fit: contain;
+    background-color: rgba(255, 255, 255, 0.85); /* Fundo branco sutil para destacar as logos */
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s ease;
+}
+
+.Pirelli img:hover, 
+.Michelin img:hover, 
+.Goodyear img:hover, 
+.Bridgestone img:hover {
+    transform: scale(1.05); /* Efeito leve de zoom ao passar o mouse */
+}
+
+/* Estilização dos botões (só os botões dos cards, para não afetar o
+   botão de busca do cabeçalho do site) */
+.marcas-grid button {
+    display: block;
+    margin: 20px auto;
+    background-color: #111111;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 12px 28px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.marcas-grid button:hover {
+    background-color: #ff9900;
+    color: #111111;
+    transform: translateY(-2px);
+}
+
+/* Cabeçalho do site: mantém a fonte usada no restante das páginas */
+.faixa-contato,
+.cabecalho {
+    font-family: Arial, Helvetica, sans-serif;
+}

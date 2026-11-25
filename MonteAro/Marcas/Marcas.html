@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catálogo de Marcas | Monte-Aro</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="Marcas.css">
+    <script src="../Carrinho/carrinho.js" defer></script>
+</head>
+<body>
+
+<div class="faixa-contato">
+    <div class="container faixa-contato-conteudo">
+        <span>Qualidade e confiança para seguir seu caminho</span>
+        <a href="mailto:montearocontato@gmail.com">Entre em contato</a>
+    </div>
+</div>
+
+<header class="cabecalho">
+    <div class="container cabecalho-principal">
+        <a class="marca" href="../Inicio/inicio.html" aria-label="Monte-Aro Pneus - página inicial">
+            <img src="../imagens/logo-monte-aro.png" alt="Monte-Aro Pneus">
+        </a>
+
+        <form class="pesquisa" action="#" role="search">
+            <input type="search" placeholder="Busque por pneus, marcas ou medidas..." aria-label="Buscar produtos">
+            <button type="submit" aria-label="Buscar"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m16 16 4 4"/></svg></button>
+        </form>
+
+        <nav class="acoes-header" aria-label="Ações do usuário">
+            <a href="../Login/login.html" class="acao-header">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4 3.6-7 8-7s8 3 8 7"/></svg>
+                <small>Login</small>
+            </a>
+            <a href="../Carrinho/carrinho.html" class="acao-header">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="9" cy="20" r="1.6"/><circle cx="18" cy="20" r="1.6"/><path d="M2 3h3l2.6 12h11.2L21 7H6"/></svg>
+                <small>Carrinho<span class="carrinho-contador" hidden>0</span></small>
+            </a>
+        </nav>
+    </div>
+
+    <nav class="menu-categorias" aria-label="Categorias">
+        <div class="container menu-categorias-conteudo">
+            <a href="../Pneus/pagPneus.html">Pneus</a>
+            <a class="ativo" href="Marcas.html">Marcas</a>
+            <a href="../Aros/aros.html">Aros</a>
+            <a href="../Acessórios/Acessórios.html">Acessórios</a>
+            <a href="../Suporte/suporte.html">Suporte</a>
+        </div>
+    </nav>
+</header>
+
+    <h1>Marcas de Pneus Disponíveis</h1>
+    <h2>Escolha Uma Marca</h2>
+
+    <div class="marcas-grid">
+
+      <div class="Pirelli">
+            <img src="https://grandesnomesdapropaganda.com.br/wp-content/uploads/2014/06/Pirelli-logo.jpg" alt="Pirelli">
+            <button onclick="window.location.href='pirelli.html'">
+                Ver Detalhes
+            </button>
+        </div>
+
+        <div class="Michelin">
+            <img src="https://logosmarcas.net/wp-content/uploads/2020/09/Michelin-Emblema.png" alt="Michelin">
+            <button onclick="window.location.href='michelin.html'">
+                Ver Detalhes
+            </button>
+        </div>
+
+        <div class="Goodyear">
+            <img src="https://tse2.mm.bing.net/th/id/OIP.kHDqM5EzYylWlpBZVee54gHaDt?r=0&rs=1&pid=ImgDetMain&o=7&rm=3" alt="Goodyear">
+            <button onclick="window.location.href='goodyear.html'">
+                Ver Detalhes
+            </button>
+        </div>
+
+        <div class="Bridgestone">
+            <img src="https://www.bridgestone.com/corporate/brand/images/logo__3.png" alt="Bridgestone">
+            <button onclick="window.location.href='bridgestone.html'">
+                Ver Detalhes
+            </button>
+        </div>
+
+    </div>
+
+</body>
+</html>

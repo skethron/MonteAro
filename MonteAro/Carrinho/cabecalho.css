@@ -1,0 +1,278 @@
+/* Cabeçalho do site (igual ao de Inicio/inicio.html), isolado dentro de
+   .cabecalho-site para não sofrer com as regras antigas de header/.container
+   que existem no styles.css desta página. */
+
+.cabecalho-site {
+    --amarelo: #f4b32b;
+    --amarelo-claro: #ffd66d;
+    --preto: #171717;
+    --cinza: #666;
+    --fundo: #f6f6f4;
+    --borda: #e8e8e5;
+    --branco: #fff;
+    line-height: 1.5; /* mesmo line-height do css/style.css do site */
+}
+
+/* ---------- faixa preta do topo ---------- */
+
+.cabecalho-site .container {
+    width: min(1160px, calc(100% - 48px));
+    max-width: none;
+    margin: 0 auto;
+    padding: 0;
+    display: block;
+    gap: 0;
+    flex-direction: row;
+    align-items: normal;
+    justify-content: normal;
+}
+
+.cabecalho-site .faixa-contato {
+    background: var(--preto, #171717);
+    color: #eee;
+    font-size: 12px;
+}
+
+.cabecalho-site .faixa-contato-conteudo {
+    min-height: 34px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+}
+
+.cabecalho-site .faixa-contato a {
+    color: var(--amarelo);
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.cabecalho-site .faixa-contato a:hover {
+    text-decoration: underline;
+}
+
+/* ---------- cabeçalho ---------- */
+
+.cabecalho-site header.cabecalho {
+    background: var(--amarelo, #f4b32b);
+    color: var(--preto, #171717);
+    padding: 0;
+    display: block;
+    text-align: left;
+    box-shadow: 0 2px 8px #00000012;
+}
+
+.cabecalho-site .cabecalho-principal {
+    min-height: 104px;
+    display: grid;
+    grid-template-columns: auto minmax(200px, 1fr) auto;
+    align-items: center;
+    gap: 28px;
+}
+
+.cabecalho-site .marca {
+    display: flex;
+    align-items: center;
+    min-width: 0;
+}
+
+.cabecalho-site .marca img {
+    height: 62px;
+    width: auto;
+    max-width: 100%;
+    object-fit: contain;
+    display: block;
+}
+
+.cabecalho-site .marca:hover {
+    opacity: 0.85;
+}
+
+.cabecalho-site .pesquisa {
+    width: min(100%, 510px);
+    justify-self: center;
+    display: flex;
+    background: #fff;
+    border: 1px solid #d9a12a;
+    border-radius: 5px;
+    overflow: hidden;
+    height: 44px;
+}
+
+.cabecalho-site .pesquisa input {
+    border: 0;
+    outline: 0;
+    padding: 0 15px;
+    min-width: 0;
+    flex: 1;
+    font-size: 14px;
+    font-family: inherit;
+}
+
+.cabecalho-site .pesquisa button {
+    width: 48px;
+    border: 0;
+    background: var(--preto);
+    color: #fff;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: inherit;
+}
+
+.cabecalho-site .pesquisa button:hover {
+    background: #333;
+}
+
+.cabecalho-site .acoes-header {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 24px;
+}
+
+.cabecalho-site .acao-header {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 4px;
+    font-weight: 700;
+    color: inherit;
+    text-decoration: none;
+}
+
+.cabecalho-site .acao-header svg {
+    width: 21px;
+    height: 21px;
+    stroke: currentColor;
+}
+
+.cabecalho-site .acao-header small {
+    font-size: 11px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.cabecalho-site .acao-header:hover {
+    color: #4a3600;
+}
+
+.cabecalho-site .carrinho-contador {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 18px;
+    height: 18px;
+    padding: 0 5px;
+    border-radius: 999px;
+    background: var(--preto);
+    color: var(--amarelo);
+    font-size: 11px;
+    font-weight: 800;
+    line-height: 1;
+}
+
+.cabecalho-site .carrinho-contador[hidden] {
+    display: none;
+}
+
+/* ---------- menu de categorias ---------- */
+
+.cabecalho-site .menu-categorias {
+    background: var(--preto, #171717);
+    color: #fff;
+}
+
+.cabecalho-site .menu-categorias-conteudo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 0;
+    min-height: 46px;
+}
+
+.cabecalho-site .menu-categorias a {
+    padding: 13px 26px;
+    font-size: 15px;
+    font-weight: 700;
+    color: inherit;
+    text-decoration: none;
+    transition: background 0.2s;
+}
+
+.cabecalho-site .menu-categorias a:hover,
+.cabecalho-site .menu-categorias a.ativo {
+    background: #333;
+    color: var(--amarelo);
+}
+
+/* ---------- responsivo (mesmas quebras do site) ---------- */
+
+@media (max-width: 960px) {
+    .cabecalho-site .cabecalho-principal {
+        grid-template-columns: 1fr auto;
+        grid-template-areas:
+            "marca acoes"
+            "pesquisa pesquisa";
+        gap: 14px 20px;
+        padding: 14px 0;
+        min-height: 0;
+    }
+
+    .cabecalho-site .marca {
+        grid-area: marca;
+    }
+
+    .cabecalho-site .acoes-header {
+        grid-area: acoes;
+        gap: 20px;
+    }
+
+    .cabecalho-site .pesquisa {
+        grid-area: pesquisa;
+        width: 100%;
+        justify-self: stretch;
+    }
+}
+
+@media (max-width: 760px) {
+    .cabecalho-site .container {
+        width: calc(100% - 32px);
+    }
+
+    .cabecalho-site .marca img {
+        height: 52px;
+    }
+
+    .cabecalho-site .menu-categorias a {
+        padding: 12px 16px;
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 560px) {
+    .cabecalho-site .faixa-contato-conteudo {
+        flex-direction: column;
+        justify-content: center;
+        gap: 2px;
+        padding: 6px 0;
+        text-align: center;
+    }
+
+    .cabecalho-site .marca img {
+        height: 44px;
+    }
+
+    .cabecalho-site .acao-header svg {
+        width: 19px;
+        height: 19px;
+    }
+
+    .cabecalho-site .menu-categorias a {
+        padding: 11px 12px;
+        font-size: 13px;
+    }
+}
